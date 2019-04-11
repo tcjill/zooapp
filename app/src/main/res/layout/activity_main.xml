@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@drawable/zoo"
+        android:src="@drawable/zoo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/photo_image_view"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-52dp"
+        android:text="Phoenix Zoo"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="165dp"
+        android:layout_marginBottom="121dp"
+        android:padding="5dp"
+
+        android:text="455 N Galvin Pkwy, Phoenix, AZ 85008"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="12sp"
+        android:layout_alignLeft="@id/photo_image_view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/photo_image_view"
+        android:layout_marginBottom="-154dp"
+        android:text="Open 9am-5pm Daily
+        &#xA;Members early entry 8am" />
+
+</RelativeLayout>
